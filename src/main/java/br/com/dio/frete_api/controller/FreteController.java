@@ -3,6 +3,7 @@ package br.com.dio.frete_api.controller;
 
 import br.com.dio.frete_api.entity.Frete;
 import br.com.dio.frete_api.service.FreteService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,6 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/frete")
+@Tag(name = "Frete")
 public class FreteController {
 
     private final FreteService service;
